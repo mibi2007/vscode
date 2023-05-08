@@ -1,0 +1,225 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": true,
+  "dart.flutterHotReloadOnSave": "never",
+  "dart.flutterSdkPath": "C:\\Users\\ADMIN\\.puro\\envs\\default\\flutter\\bin",
+  "dart.lineLength": 120,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.sdkPath": "C:\\Users\\ADMIN\\.puro\\envs\\default\\flutter\\bin",
+  "diffEditor.wordWrap": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 120,
+  "files.associations": {
+    "*.js": "javascript",
+    "*.json": "json",
+    "*.slim": "javascript",
+    "*.vue": "vue"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.format.enable": false,
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "search.exclude": {
+    "**/.*": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme",
+  "yaml.schemas": {
+    "file:///c%3A/Users/ADMIN/.vscode/extensions/atlassian.atlascode-2.10.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "dart.flutterWebRenderer": "canvaskit",
+  "dart.showInspectorNotificationsForWidgetErrors": false,
+  "vim.enableNeovim": true,
+  "vim.neovimUseConfigFile": true,
+  "vim.neovimPath": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
+  "vim.useSystemClipboard": false,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-k>": false,
+    "<C-c>": false,
+    // "<C-d>": false,
+    "<C-x>": false,
+    "<C-l>": false,
+    "<C-w>": false,
+    "<C-j>": false,
+    "<C-b>": false,
+    "<C-v>": false,
+    "<C-s>": false,
+    "<C-u>": false
+  },
+  "vim.useCtrlKeys": false,
+  // "vim.insertModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["<C-s>"],
+  //     "commands": [{ "command": "workbench.action.files.save" }, { "command": "extension.vim_escape" }]
+  //   }
+  // ],
+  // "vim.normalModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["<C-s>"],
+  //     "commands": [{ "command": "workbench.action.files.save" }, { "command": "extension.vim_escape" }]
+  //   }
+  // ],
+  "vim.mouseSelectionGoesIntoVisualMode": false,
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["alt+d"],
+      "after": ["\""]
+    }
+  ],
+  "macros": {},
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "pubspec.yaml": "pubspec.lock,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+    "*.dart": "${capture}.freezed.dart,${capture}.g.dart"
+  },
+  "screencastMode.fontSize": 20,
+  "screencastMode.verticalOffset": 0,
+  "screencastMode.keyboardShortcutsFormat": "keys",
+  "screencastMode.keyboardOverlayTimeout": 2000,
+  "terminal.integrated.copyOnSelection": true,
+  "editor.linkedEditing": true,
+  "html.autoClosingTags": true,
+  "debug.allowBreakpointsEverywhere": true,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "http.proxySupport": "on",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+  },
+  "scss.validate": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.copyRelativePathSeparator": "/",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.disassemblyView.showSourceCode": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "warmUp.switchNaturalLanguage": "english",
+  "warmUp.changeCount": "60",
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "github.copilot.advanced": {},
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "editor.minimap.showSlider": "always",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "vscodeGoogleTranslate.preferredLanguage": "English",
+  "errorLens.excludeBySource": ["eslint(object-curly-spacing)", "ts(2339)"],
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "window.customMenuBarAltFocus": false,
+  "window.enableMenuBarMnemonics": false,
+  "dart.hotReloadProgress": "statusBar",
+  "dart.showDevToolsDebugToolBarButtons": false,
+  "window.menuBarVisibility": "compact",
+  "editor.lineNumbers": "relative"
+}

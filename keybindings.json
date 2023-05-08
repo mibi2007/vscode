@@ -1,0 +1,380 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+n",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveLocalFile",
+    "when": "remoteFileDialogVisible"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "eslint.applyAllFixes"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "eslint.executeAutofix"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "editor.action.fixAll"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetVisible"
+  },
+  {
+    "key": "alt+k",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetVisible"
+  },
+  {
+    "key": "alt+j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen && !editorReadonly"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen && !editorReadonly"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "keyboard-quickfix.openQuickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "h",
+    "command": "list.collapse",
+    "when": "listFocus && !inputFocus && listFocus && !inputFocus"
+  },
+  {
+    "key": "l",
+    "command": "list.expand",
+    "when": "listFocus && !inputFocus && listFocus && !inputFocus"
+  },
+  {
+    "key": "l",
+    "command": "list.expand",
+    "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus"
+  },
+  {
+    "key": "h",
+    "command": "list.collapse",
+    "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus"
+  },
+  {
+    "command": "extension.vim_escape",
+    // the key sequence to activate the binding
+    "key": "capslock",
+    // don't activate during insert mode
+    "when": "editorTextFocus && vim.mode == 'Insert'"
+    // the input to send to neovim
+    // "args": "capslock"
+  },
+  {
+    "command": "cursorPageUp",
+    "key": "alt+u",
+    "when": "neovim.mode == normal && editorTextFocus"
+  },
+  {
+    "command": "cursorPageDown",
+    "key": "alt+d",
+    "when": "neovim.mode == normal && editorTextFocus"
+  },
+  {
+    "key": "space",
+    "when": "vim.active && editorTextFocus && vim.mode != 'Insert'",
+    "command": "toggle",
+    "args": {
+      "id": "line-numbers",
+      "value": [
+        {
+          "editor.lineNumbers": "relative"
+        },
+        {
+          "editor.lineNumbers": "on"
+        }
+      ]
+    }
+  },
+  {
+    "key": "alt+c",
+    "when": "editorTextFocus",
+    "command": "toggle",
+    "args": {
+      "id": "vscodevim.vim",
+      "value": [
+        {
+          "vim.useCtrlKeys": true
+        },
+        {
+          "vim.useCtrlKeys": false
+        }
+      ]
+    }
+  },
+  {
+    "key": "alt+v",
+    "command": "toggleVim"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-extension.vim_cmd+alt+down",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-extension.vim_cmd+alt+up",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-list.focusPageDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "extension.vim_ctrl+d",
+        {
+          "command": "vim.remap",
+          "args": {
+            "after": ["z", "z"]
+          }
+        }
+      ]
+    },
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "editorScroll",
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode != 'Insert'",
+    "args": {
+      "to": "down",
+      // "value": 10,
+      "by": "page",
+      "revealCursor": false
+    }
+  },
+  {
+    "key": "alt+k",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "extension.vim_ctrl+u",
+        {
+          "command": "vim.remap",
+          "args": {
+            "after": ["z", "z"]
+          }
+        }
+      ]
+    },
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "editorScroll",
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode != 'Insert'",
+    "args": {
+      "to": "up",
+      // "value": 10,
+      "by": "page",
+      "revealCursor": false
+    }
+  },
+  {
+    "key": "alt+j",
+    "command": "cursorDown",
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert' && !suggestWidgetVisible"
+  },
+  {
+    "key": "alt+k",
+    "command": "cursorUp",
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert' && !suggestWidgetVisible"
+  },
+  {
+    "key": "alt+h",
+    "command": "cursorLeft",
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert' && !suggestWidgetVisible"
+  },
+  {
+    "key": "alt+l",
+    "command": "cursorRight",
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert' && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+alt+h",
+    "command": "cursorWordEndLeft",
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert' && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "cursorWordEndRight",
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert' && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "-workbench.action.files.save",
+    "when": "vim.active"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "runCommands",
+    "args": {
+      "commands": ["workbench.action.files.save", "extension.vim_escape"]
+    },
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+shift+alt+j",
+    "command": "cursorColumnSelectDown",
+    "when": "textInputFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert'"
+  },
+  {
+    "key": "ctrl+shift+alt+k",
+    "command": "cursorColumnSeletcUp",
+    "when": "textInputFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert'"
+  },
+  {
+    "key": "ctrl+shift+alt+h",
+    "command": "cursorColumnSelectLeft",
+    "when": "textInputFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert'"
+  },
+  {
+    "key": "ctrl+shift+alt+l",
+    "command": "cursorColumnSelectRight",
+    "when": "textInputFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert'"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "search.focus.nextInputBox",
+    "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "search.focus.previousInputBox",
+    "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "-redo",
+    "when": "textInputFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert'"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "extension.vim_ctrl+r",
+    "when": "textInputFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode == 'Insert'"
+  },
+  {
+    "key": "f5",
+    "command": "rust-analyzer.debug",
+    "when": "editorTextFocus && editorLangId == rust"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "-liveshare.join",
+    "when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-extension.vim_ctrl+d",
+    "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
+  },
+  {
+    "key": "alt+f",
+    "command": "workbench.view.extension.flutter"
+  },
+  {
+    "key": "ctrl+alt+space",
+    "command": "github.copilot.generate"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-extension.vim_ctrl+r",
+    "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-extension.vim_ctrl+h",
+    "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "-extension.vim_ctrl+]",
+    "when": "editorTextFocus && vim.active && vim.use<C-]> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "-extension.vim_ctrl+[",
+    "when": "editorTextFocus && vim.active && vim.use<C-[> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+shift+5",
+    "command": "editor.emmet.action.matchTag",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+space",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "extension.vim_insert",
+        {
+          "command": "type",
+          "args": {
+            "text": " "
+          }
+        },
+        "cursorLeft"
+      ]
+    },
+    "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode != 'Insert'"
+  }
+]
