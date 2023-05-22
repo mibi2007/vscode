@@ -1,16 +1,4 @@
 {
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
   "dart.debugExternalPackageLibraries": true,
   "dart.debugSdkLibraries": true,
   "dart.flutterHotReloadOnSave": "never",
@@ -76,18 +64,18 @@
     "<C-u>": false
   },
   "vim.useCtrlKeys": false,
-  // "vim.insertModeKeyBindingsNonRecursive": [
-  //   {
-  //     "before": ["<C-s>"],
-  //     "commands": [{ "command": "workbench.action.files.save" }, { "command": "extension.vim_escape" }]
-  //   }
-  // ],
-  // "vim.normalModeKeyBindingsNonRecursive": [
-  //   {
-  //     "before": ["<C-s>"],
-  //     "commands": [{ "command": "workbench.action.files.save" }, { "command": "extension.vim_escape" }]
-  //   }
-  // ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "after": ["<leader>", "<leader>", "s"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<space>"],
+      "after": ["<leader>", "<leader>", "s"]
+    }
+  ],
   "vim.mouseSelectionGoesIntoVisualMode": false,
   "vim.operatorPendingModeKeyBindings": [
     {
@@ -95,6 +83,8 @@
       "after": ["\""]
     }
   ],
+  "vim.easymotion": true,
+  // "vim.leader": "<space>",
   "macros": {},
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
@@ -114,9 +104,6 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 4
   },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "http.proxySupport": "on",
   "workbench.colorCustomizations": {
     "statusBar.background": "#005f5f",
@@ -124,14 +111,7 @@
     "statusBar.debuggingBackground": "#005f5f"
   },
   "scss.validate": false,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "explorer.copyRelativePathSeparator": "/",
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "debug.disassemblyView.showSourceCode": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "warmUp.switchNaturalLanguage": "english",
   "warmUp.changeCount": "60",
@@ -220,6 +200,8 @@
   "window.enableMenuBarMnemonics": false,
   "dart.hotReloadProgress": "statusBar",
   "dart.showDevToolsDebugToolBarButtons": false,
-  "window.menuBarVisibility": "compact",
-  "editor.lineNumbers": "relative"
+  "editor.lineNumbers": "relative",
+  "window.zoomLevel": 1,
+  "window.menuBarVisibility": "hidden",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

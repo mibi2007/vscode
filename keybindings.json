@@ -119,38 +119,37 @@
     "key": "alt+d",
     "when": "neovim.mode == normal && editorTextFocus"
   },
-  {
-    "key": "space",
-    "when": "vim.active && editorTextFocus && vim.mode != 'Insert'",
-    "command": "toggle",
-    "args": {
-      "id": "line-numbers",
-      "value": [
-        {
-          "editor.lineNumbers": "relative"
-        },
-        {
-          "editor.lineNumbers": "on"
-        }
-      ]
-    }
-  },
-  {
-    "key": "alt+c",
-    "when": "editorTextFocus",
-    "command": "toggle",
-    "args": {
-      "id": "vscodevim.vim",
-      "value": [
-        {
-          "vim.useCtrlKeys": true
-        },
-        {
-          "vim.useCtrlKeys": false
-        }
-      ]
-    }
-  },
+  //   "key": "space",
+  //   "when": "vim.active && editorTextFocus && vim.mode != 'Insert'",
+  //   "command": "toggle",
+  //   "args": {
+  //     "id": "line-numbers",
+  //     "value": [
+  //       {
+  //         "editor.lineNumbers": "relative"
+  //       },
+  //       {
+  //         "editor.lineNumbers": "on"
+  //       }
+  //     ]
+  //   }
+  // },
+  // {
+  //   "key": "alt+c",
+  //   "when": "editorTextFocus",
+  //   "command": "toggle",
+  //   "args": {
+  //     "id": "vscodevim.vim",
+  //     "value": [
+  //       {
+  //         "vim.useCtrlKeys": true
+  //       },
+  //       {
+  //         "vim.useCtrlKeys": false
+  //       }
+  //     ]
+  //   }
+  // },
   {
     "key": "alt+v",
     "command": "toggleVim"
@@ -376,5 +375,15 @@
       ]
     },
     "when": "editorTextFocus && !inDebugRepleditorTextFocus && vim.active && vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+f5",
+    "command": "workbench.action.debug.restart",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "ctrl+shift+f5",
+    "command": "-workbench.action.debug.restart",
+    "when": "inDebugMode"
   }
 ]
